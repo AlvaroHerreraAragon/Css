@@ -1,3 +1,39 @@
+/* =======================
+   Estilos Generales
+======================= */
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    /* espacio para el menú */
+    padding-bottom: 180px;
+    /* espacio para el footer */
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =======================
+   Menú Superior
+======================= */
+
 .menu {
     position: fixed;
     top: 0;
@@ -14,12 +50,16 @@
     height: 50px;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 17px;
-    font-family: Arial, sans-serif;
 }
 
 .nav-links a:hover {
@@ -39,6 +79,10 @@
     background-color: darkred;
 }
 
+/* =======================
+   Footer
+======================= */
+
 footer {
     position: fixed;
     bottom: 0;
@@ -52,7 +96,6 @@ footer {
 
 .footer-col {
     width: 30%;
-    font-family: Arial, sans-serif;
 }
 
 .footer-col img {
@@ -78,34 +121,22 @@ footer {
     padding: 8px;
 }
 
-body {
-    padding-top: 120px;
-    padding-bottom: 180px;
-    margin: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-h1 {
-    color: green;
-    font-family: Arial, sans-serif;
-}
-
-p {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-}
+/* =======================
+   Imagen Principal
+======================= */
 
 .imagen-principal {
     width: 100%;
     margin: 20px 0;
 }
 
+/* =======================
+   Media Queries (Móvil)
+======================= */
+
 @media (max-width: 768px) {
 
+    /* Menú adaptado */
     .menu {
         flex-direction: column;
         align-items: flex-start;
@@ -117,15 +148,16 @@ p {
     }
 
     .nav-links {
-        display: block;
+        display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
+        gap: 5px;
     }
 
     .nav-links a {
-        margin: 5px 0;
         font-size: 16px;
+        margin: 5px 0;
     }
 
     .live-btn {
@@ -134,11 +166,13 @@ p {
         margin-top: 10px;
     }
 
+    /* Footer adaptado */
     footer {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 15px;
         position: static;
+        /* deja de ser fijo en móvil */
     }
 
     .footer-col {
@@ -147,11 +181,13 @@ p {
         margin-bottom: 15px;
     }
 
+    /* Body padding ajustado */
     body {
-        padding-top: 150px;
-        padding-bottom: 40px;
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
+    /* Tipografía */
     h1 {
         font-size: 24px;
         text-align: center;
@@ -161,6 +197,7 @@ p {
         font-size: 16px;
     }
 
+    /* Imagen principal */
     .imagen-principal {
         width: 100%;
     }
