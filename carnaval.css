@@ -106,6 +106,7 @@ p {
     margin: 20px 0;
 }
 
+/*Para cuando es en movil*/
 @media (max-width: 600px) {
 
     .menu {
