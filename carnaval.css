@@ -106,42 +106,10 @@ p {
     margin: 20px 0;
 }
 
-@media (max-width: 1024px) {
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        margin: 10px 0;
-    }
-
-    .nav-links a {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    body {
-        padding-bottom: 250px;
-    }
-}
-
 @media (max-width: 600px) {
 
     .menu {
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px;
     }
 
@@ -166,6 +134,7 @@ p {
     }
 
     footer {
+        position: relative;
         flex-direction: column;
         padding: 15px;
     }
